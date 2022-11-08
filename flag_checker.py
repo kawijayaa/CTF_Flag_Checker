@@ -67,6 +67,25 @@ def check(team_name:str, chall_name:str, flag:str, db):
     else:
         return False
 
+def dump_flags(db, filename):
+    out = []
+    for x in db["teams"].find({}):
+        flags = {}
+        for y in db["flags"].find({}, {"_id":0}):
+            team = x["team"]
+            chall = y["chall_name"]
+            checksum = db["teams"].find_one({"team":team})["flag_checksums"][chall]
+            flag_text = db["flags"].find_one({"chall_name":chall})["flag_text"]
+
+            flags[chall] = db.name + "{" + flag_text + f"_{checksum}" + "}"
+        doc = {
+            "team":team,
+            "flags":flags
+        }
+        out.append(doc)
+    with open(filename, "w") as file:
+        json.dump(out, file, indent=4)
+
 def main():
     mdb = init("CTF2022", "mongodb+srv://" + os.environ["MONGODB_USER"] + ":" + os.environ["MONGODB_PASS"] + "@cluster0.bzrnt7o.mongodb.net/?retryWrites=true&w=majority", "example_teams.json", "example_flags.json")
 
@@ -75,6 +94,8 @@ def main():
 
     with open('teams_checksum.json', 'w') as file:
         json.dump(json.loads(dumps(mdb["teams"].find({}))), file, indent=4)
+
+    dump_flags(mdb, "team_flags.json")
 
     team_name = input("Enter your team name: ")
     chall = input("Enter challenge name: ")

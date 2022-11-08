@@ -1,0 +1,47 @@
+[
+    {
+        "team": "Team A",
+        "flags": {
+            "chall1": "CTF2022{h3llo_w0rld!!!_6188b9990e}",
+            "chall2": "CTF2022{7his_i5_a_73s7_915f597079}",
+            "chall3": "CTF2022{1_think_7hi5_w1ll_w0rk_71f1bb29d4}",
+            "chall4": "CTF2022{or_maybe_n0t_f3dab08d13}"
+        }
+    },
+    {
+        "team": "Team B",
+        "flags": {
+            "chall1": "CTF2022{h3llo_w0rld!!!_8cb5a9e7a5}",
+            "chall2": "CTF2022{7his_i5_a_73s7_1b1a61c42f}",
+            "chall3": "CTF2022{1_think_7hi5_w1ll_w0rk_00b5b4d305}",
+            "chall4": "CTF2022{or_maybe_n0t_adc475178d}"
+        }
+    },
+    {
+        "team": "Team C",
+        "flags": {
+            "chall1": "CTF2022{h3llo_w0rld!!!_82ae5b547d}",
+            "chall2": "CTF2022{7his_i5_a_73s7_695ab45e44}",
+            "chall3": "CTF2022{1_think_7hi5_w1ll_w0rk_9640571881}",
+            "chall4": "CTF2022{or_maybe_n0t_dc95ed4182}"
+        }
+    },
+    {
+        "team": "Team D",
+        "flags": {
+            "chall1": "CTF2022{h3llo_w0rld!!!_708594c75e}",
+            "chall2": "CTF2022{7his_i5_a_73s7_ecb4922f8f}",
+            "chall3": "CTF2022{1_think_7hi5_w1ll_w0rk_200fc79d39}",
+            "chall4": "CTF2022{or_maybe_n0t_e6d12c4f23}"
+        }
+    },
+    {
+        "team": "Team E",
+        "flags": {
+            "chall1": "CTF2022{h3llo_w0rld!!!_229f930f59}",
+            "chall2": "CTF2022{7his_i5_a_73s7_6097178c08}",
+            "chall3": "CTF2022{1_think_7hi5_w1ll_w0rk_09f4cbfbbd}",
+            "chall4": "CTF2022{or_maybe_n0t_135405a160}"
+        }
+    }
+]

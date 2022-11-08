@@ -1,62 +1,62 @@
 [
     {
         "_id": {
-            "$oid": "6369c02560f649448a373414"
+            "$oid": "6369d684791e118f5bd9bea3"
         },
         "team": "Team A",
         "flag_checksums": {
-            "chall1": "9d077426ce",
-            "chall2": "e4b46a9a62",
-            "chall3": "a4743c07ff",
-            "chall4": "84db95e76a"
+            "chall1": "6188b9990e",
+            "chall2": "915f597079",
+            "chall3": "71f1bb29d4",
+            "chall4": "f3dab08d13"
         }
     },
     {
         "_id": {
-            "$oid": "6369c02560f649448a373415"
+            "$oid": "6369d684791e118f5bd9bea4"
         },
         "team": "Team B",
         "flag_checksums": {
-            "chall1": "ccf27d4684",
-            "chall2": "deab33f892",
-            "chall3": "123de067ae",
-            "chall4": "8f8db3acd0"
+            "chall1": "8cb5a9e7a5",
+            "chall2": "1b1a61c42f",
+            "chall3": "00b5b4d305",
+            "chall4": "adc475178d"
         }
     },
     {
         "_id": {
-            "$oid": "6369c02560f649448a373416"
+            "$oid": "6369d684791e118f5bd9bea5"
         },
         "team": "Team C",
         "flag_checksums": {
-            "chall1": "2f90fa2bf0",
-            "chall2": "7cbdee25c4",
-            "chall3": "3749edc476",
-            "chall4": "eac384428e"
+            "chall1": "82ae5b547d",
+            "chall2": "695ab45e44",
+            "chall3": "9640571881",
+            "chall4": "dc95ed4182"
         }
     },
     {
         "_id": {
-            "$oid": "6369c02560f649448a373417"
+            "$oid": "6369d684791e118f5bd9bea6"
         },
         "team": "Team D",
         "flag_checksums": {
-            "chall1": "0edb4dde03",
-            "chall2": "98cbc1d48f",
-            "chall3": "95a2be7b58",
-            "chall4": "98b2544883"
+            "chall1": "708594c75e",
+            "chall2": "ecb4922f8f",
+            "chall3": "200fc79d39",
+            "chall4": "e6d12c4f23"
         }
     },
     {
         "_id": {
-            "$oid": "6369c02560f649448a373418"
+            "$oid": "6369d684791e118f5bd9bea7"
         },
         "team": "Team E",
         "flag_checksums": {
-            "chall1": "fb1488888e",
-            "chall2": "41530f3f1a",
-            "chall3": "3dd5046b0e",
-            "chall4": "2e120fe585"
+            "chall1": "229f930f59",
+            "chall2": "6097178c08",
+            "chall3": "09f4cbfbbd",
+            "chall4": "135405a160"
         }
     }
 ]
