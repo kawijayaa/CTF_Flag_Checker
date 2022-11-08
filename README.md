@@ -9,7 +9,7 @@ Example Flag : CTF2022{h3llo_w0rld!!!_6188b9990e}
 competition_name
 - flags
   - chall_name
-  - flag_text (only the obfuscated text, e.g "h3llo_w0rld!!!")
+  - flag_text (only the obfuscated text, e.g. "h3llo_w0rld!!!")
 - teams
   - team (team name)
   - flag_checksums (list of checksums by their challenges)
@@ -24,7 +24,7 @@ competition_name
 flags.json
 - flags
   - chall_name
-  - flag_text (only the obfuscated text, e.g "h3llo_w0rld!!!")
+  - flag_text (only the obfuscated text, e.g. "hello_world!!!")
   - ...
 
 teams.json
