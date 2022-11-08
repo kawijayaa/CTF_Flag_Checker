@@ -24,7 +24,7 @@ competition_name
 flags.json
 - flags
   - chall_name
-  - flag_text (only the obfuscated text, e.g. "hello_world!!!")
+  - flag_text (plain text, e.g. "hello_world!!!")
   - ...
 
 teams.json
