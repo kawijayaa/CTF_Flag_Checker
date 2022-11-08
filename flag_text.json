@@ -1,0 +1,30 @@
+[
+    {
+        "_id": {
+            "$oid": "6369c02460f649448a373410"
+        },
+        "chall_name": "chall1",
+        "flag_text": "h3ll0_world!!!"
+    },
+    {
+        "_id": {
+            "$oid": "6369c02460f649448a373411"
+        },
+        "chall_name": "chall2",
+        "flag_text": "7h15_i5_a_7357"
+    },
+    {
+        "_id": {
+            "$oid": "6369c02460f649448a373412"
+        },
+        "chall_name": "chall3",
+        "flag_text": "i_think_th1s_will_work"
+    },
+    {
+        "_id": {
+            "$oid": "6369c02460f649448a373413"
+        },
+        "chall_name": "chall4",
+        "flag_text": "0r_mayb3_n07"
+    }
+]
