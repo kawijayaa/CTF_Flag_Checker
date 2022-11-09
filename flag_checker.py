@@ -57,12 +57,11 @@ def init(competition_name:str, mongo_link:str, teams_json:str, flags_json:str):
         team_col.insert_one(doc) # Insert checksums to collection
     return db
 
-def check(team_name:str, chall_name:str, flag:str, db):
+def check(team_name:str, chall_name:str, flagg:str, db):
     chall_text = db["flags"].find_one({"chall_name":chall_name})["flag_text"]
     team_chall_checksum = db["teams"].find_one({"team" : team_name})["flag_checksums"][chall_name]
-    flag_split = re.split("{|}|_", flag)[:-1]
 
-    if flag == db.name + "{" + chall_text + "_" + team_chall_checksum + "}":
+    if flagg == flag.format_flag(db.name, chall_text, team_chall_checksum):
         return True
     else:
         return False
@@ -77,7 +76,7 @@ def dump_flags(db, filename):
             checksum = db["teams"].find_one({"team":team})["flag_checksums"][chall]
             flag_text = db["flags"].find_one({"chall_name":chall})["flag_text"]
 
-            flags[chall] = db.name + "{" + flag_text + f"_{checksum}" + "}"
+            flags[chall] = flag.format_flag(db.name, flag_text, checksum)
         doc = {
             "team":team,
             "flags":flags
@@ -105,16 +104,11 @@ def main():
     team_chall_checksum = mdb["teams"].find_one({"team" : team_name})["flag_checksums"][chall]
     inp_flag_split = re.split("{|}|_", inp_flag)[:-1]
 
-    if inp_flag == mdb.name + "{" + chall_text + "_" + team_chall_checksum + "}":
+    if check(team_name, chall, inp_flag, mdb):
         print("Solved")
     else:
-        try:
-            if inp_flag_split[0] == mdb.name and "_".join(inp_flag_split[1:-1]) == chall_text and inp_flag_split[-1] != team_chall_checksum:
-                print("This flag is not for your team")
-            else:
-                print("Wrong flag")
-        except:
-            print("Wrong flag")
+        print("Wrong flag")
+        
 
 if __name__ == "__main__":
     main()
