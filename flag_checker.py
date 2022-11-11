@@ -5,7 +5,17 @@ import re
 import os
 import json
 
-def init(competition_name:str, mongo_link:str, teams_json:str, flags_json:str):
+def connect(mongo_link:str):
+    # Connect to MongoDB
+    try:
+        client = pymongo.MongoClient(mongo_link)
+        print("Connection Successful. \n")
+    except:
+        print("!!! Cannot connect to MongoDB !!!")
+        quit()
+    return client
+
+def init_db(client, competition_name:str, flags_json:str, teams_json:str, reset=True):
     # Plain text flag
     with open(flags_json) as flags:
         flags_data = json.loads(flags.read())
@@ -17,17 +27,12 @@ def init(competition_name:str, mongo_link:str, teams_json:str, flags_json:str):
         fl = flag.generate_text(flags_data.get(text), 0)
         flag_texts[text] = fl
 
-    # Connect to MongoDB
-    try:
-        client = pymongo.MongoClient(mongo_link)
-    except:
-        print("!!! Cannot connect to MongoDB !!!")
-        quit()
-
     # Create DB
     db = client[competition_name]
 
-    db.drop_collection("flags") # Reset existing collection
+    if reset:
+        db.drop_collection("flags") # Reset existing collection
+
     flag_col = db["flags"] # Create collection containing the flag texts
 
     for title in flags_data:
@@ -38,10 +43,12 @@ def init(competition_name:str, mongo_link:str, teams_json:str, flags_json:str):
 
         flag_col.insert_one(doc) # Insert flag texts to collection
 
-    db.drop_collection("teams") # Reset existing collection
+    if reset:
+        db.drop_collection("teams") # Reset existing collection
+
     team_col = db["teams"] # Create collection containing flag checksums for each team
 
-    with open("example_teams.json") as tm:
+    with open(teams_json) as tm:
         tm = json.loads(tm.read())
 
     for teams in tm["teams"]: # Test team name
@@ -86,13 +93,14 @@ def dump_flags(db, filename):
         json.dump(out, file, indent=4)
 
 def main():
-    mdb = init("CTF2022", "mongodb+srv://" + os.environ["MONGODB_USER"] + ":" + os.environ["MONGODB_PASS"] + "@cluster0.bzrnt7o.mongodb.net/?retryWrites=true&w=majority", "example_teams.json", "example_flags.json")
+    client = connect("mongodb+srv://" + os.environ["MONGODB_USER"] + ":" + os.environ["MONGODB_PASS"] + "@cluster0.bzrnt7o.mongodb.net/?retryWrites=true&w=majority")
+    mdb = init_db(client, "CTF2022", "example_flags.json", "example_teams.json")
 
     with open('flag_text.json', 'w') as file:
-        json.dump(json.loads(dumps(mdb["flags"].find({}))), file, indent=4)
+        json.dump(json.loads(dumps(mdb["flags"].find({}, {"_id":0}))), file, indent=4)
 
     with open('teams_checksum.json', 'w') as file:
-        json.dump(json.loads(dumps(mdb["teams"].find({}))), file, indent=4)
+        json.dump(json.loads(dumps(mdb["teams"].find({}, {"_id":0}))), file, indent=4)
 
     dump_flags(mdb, "team_flags.json")
 
@@ -100,15 +108,10 @@ def main():
     chall = input("Enter challenge name: ")
     inp_flag = input("Enter your flag: ")
 
-    chall_text = mdb["flags"].find_one({"chall_name":chall})["flag_text"]
-    team_chall_checksum = mdb["teams"].find_one({"team" : team_name})["flag_checksums"][chall]
-    inp_flag_split = re.split("{|}|_", inp_flag)[:-1]
-
     if check(team_name, chall, inp_flag, mdb):
         print("Solved")
     else:
-        print("Wrong flag")
-        
+        print("Wrong flag") 
 
 if __name__ == "__main__":
     main()

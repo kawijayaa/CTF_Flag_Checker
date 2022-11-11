@@ -1,62 +1,47 @@
 [
     {
-        "_id": {
-            "$oid": "6369d684791e118f5bd9bea3"
-        },
         "team": "Team A",
         "flag_checksums": {
-            "chall1": "6188b9990e",
-            "chall2": "915f597079",
-            "chall3": "71f1bb29d4",
-            "chall4": "f3dab08d13"
+            "chall1": "57af9c3a9d",
+            "chall2": "66272a3d62",
+            "chall3": "0ee5c207af",
+            "chall4": "be7728edcf"
         }
     },
     {
-        "_id": {
-            "$oid": "6369d684791e118f5bd9bea4"
-        },
         "team": "Team B",
         "flag_checksums": {
-            "chall1": "8cb5a9e7a5",
-            "chall2": "1b1a61c42f",
-            "chall3": "00b5b4d305",
-            "chall4": "adc475178d"
+            "chall1": "acc217cbf7",
+            "chall2": "d0c80c73de",
+            "chall3": "3b48977c46",
+            "chall4": "dea471ce09"
         }
     },
     {
-        "_id": {
-            "$oid": "6369d684791e118f5bd9bea5"
-        },
         "team": "Team C",
         "flag_checksums": {
-            "chall1": "82ae5b547d",
-            "chall2": "695ab45e44",
-            "chall3": "9640571881",
-            "chall4": "dc95ed4182"
+            "chall1": "c2986791f8",
+            "chall2": "fb7764a304",
+            "chall3": "67aedb474a",
+            "chall4": "5c4324a8fb"
         }
     },
     {
-        "_id": {
-            "$oid": "6369d684791e118f5bd9bea6"
-        },
         "team": "Team D",
         "flag_checksums": {
-            "chall1": "708594c75e",
-            "chall2": "ecb4922f8f",
-            "chall3": "200fc79d39",
-            "chall4": "e6d12c4f23"
+            "chall1": "ebc5f757bc",
+            "chall2": "a761ac62ca",
+            "chall3": "bccb5be736",
+            "chall4": "89f3df377b"
         }
     },
     {
-        "_id": {
-            "$oid": "6369d684791e118f5bd9bea7"
-        },
         "team": "Team E",
         "flag_checksums": {
-            "chall1": "229f930f59",
-            "chall2": "6097178c08",
-            "chall3": "09f4cbfbbd",
-            "chall4": "135405a160"
+            "chall1": "ca6b6ee5d7",
+            "chall2": "883bf9dc7a",
+            "chall3": "50f9890915",
+            "chall4": "8c811bb4f9"
         }
     }
 ]
