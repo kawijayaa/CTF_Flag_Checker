@@ -2,46 +2,46 @@
     {
         "team": "Team A",
         "flag_checksums": {
-            "chall1": "57af9c3a9d",
-            "chall2": "66272a3d62",
-            "chall3": "0ee5c207af",
-            "chall4": "be7728edcf"
+            "chall1": "635c690092",
+            "chall2": "69e2d0b6c4",
+            "chall3": "d1b3b8c752",
+            "chall4": "28c2d63de1"
         }
     },
     {
         "team": "Team B",
         "flag_checksums": {
-            "chall1": "acc217cbf7",
-            "chall2": "d0c80c73de",
-            "chall3": "3b48977c46",
-            "chall4": "dea471ce09"
+            "chall1": "62f2fc61f2",
+            "chall2": "147ccf61ec",
+            "chall3": "479ca66600",
+            "chall4": "ba58d8d765"
         }
     },
     {
         "team": "Team C",
         "flag_checksums": {
-            "chall1": "c2986791f8",
-            "chall2": "fb7764a304",
-            "chall3": "67aedb474a",
-            "chall4": "5c4324a8fb"
+            "chall1": "1193001114",
+            "chall2": "25c33f9cdc",
+            "chall3": "c081e6fb84",
+            "chall4": "f28363cd24"
         }
     },
     {
         "team": "Team D",
         "flag_checksums": {
-            "chall1": "ebc5f757bc",
-            "chall2": "a761ac62ca",
-            "chall3": "bccb5be736",
-            "chall4": "89f3df377b"
+            "chall1": "485643e3ad",
+            "chall2": "d21b869038",
+            "chall3": "4cb7ec1a77",
+            "chall4": "cb8d47361d"
         }
     },
     {
         "team": "Team E",
         "flag_checksums": {
-            "chall1": "ca6b6ee5d7",
-            "chall2": "883bf9dc7a",
-            "chall3": "50f9890915",
-            "chall4": "8c811bb4f9"
+            "chall1": "91d89627a6",
+            "chall2": "cc5ffb1b8d",
+            "chall3": "ecda23bb69",
+            "chall4": "32243d7668"
         }
     }
 ]

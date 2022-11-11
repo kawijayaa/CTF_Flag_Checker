@@ -1,18 +1,18 @@
 [
     {
         "chall_name": "chall1",
-        "flag_text": "hell0_w0rld!!!"
+        "flag_text": "hell0_world!!!"
     },
     {
         "chall_name": "chall2",
-        "flag_text": "7h15_is_4_73s7"
+        "flag_text": "7h15_15_a_te57"
     },
     {
         "chall_name": "chall3",
-        "flag_text": "1_7hink_7hi5_will_w0rk"
+        "flag_text": "i_7hink_7h15_will_work"
     },
     {
         "chall_name": "chall4",
-        "flag_text": "or_m4ybe_no7"
+        "flag_text": "or_maybe_not"
     }
 ]

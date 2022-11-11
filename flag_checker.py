@@ -92,16 +92,27 @@ def dump_flags(db, filename):
     with open(filename, "w") as file:
         json.dump(out, file, indent=4)
 
+def dump_flag_text(db, filename:str, id=False):
+    with open(filename, 'w') as file:
+        if id:
+            json.dump(json.loads(dumps(db["flags"].find({}))), file, indent=4)
+        else:
+            json.dump(json.loads(dumps(db["flags"].find({}, {"_id":0}))), file, indent=4)
+
+def dump_team_checksum(db, filename:str, id=False):
+    with open(filename, 'w') as file:
+        if id:
+            json.dump(json.loads(dumps(db["teams"].find({}))), file, indent=4)
+        else:
+            json.dump(json.loads(dumps(db["teams"].find({}, {"_id":0}))), file, indent=4)
+
 def main():
-    client = connect("mongodb+srv://" + os.environ["MONGODB_USER"] + ":" + os.environ["MONGODB_PASS"] + "@cluster0.bzrnt7o.mongodb.net/?retryWrites=true&w=majority")
+    mongo_link = input("Enter MongoDB server link: ")
+    client = connect(mongo_link)
     mdb = init_db(client, "CTF2022", "example_flags.json", "example_teams.json")
 
-    with open('flag_text.json', 'w') as file:
-        json.dump(json.loads(dumps(mdb["flags"].find({}, {"_id":0}))), file, indent=4)
-
-    with open('teams_checksum.json', 'w') as file:
-        json.dump(json.loads(dumps(mdb["teams"].find({}, {"_id":0}))), file, indent=4)
-
+    dump_flag_text(mdb, "flag_text.json")
+    dump_team_checksum(mdb, "teams_checksum.json")
     dump_flags(mdb, "team_flags.json")
 
     team_name = input("Enter your team name: ")

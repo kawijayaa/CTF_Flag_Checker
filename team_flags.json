@@ -2,46 +2,46 @@
     {
         "team": "Team A",
         "flags": {
-            "chall1": "CTF2022{hell0_w0rld!!!_57af9c3a9d}",
-            "chall2": "CTF2022{7h15_is_4_73s7_66272a3d62}",
-            "chall3": "CTF2022{1_7hink_7hi5_will_w0rk_0ee5c207af}",
-            "chall4": "CTF2022{or_m4ybe_no7_be7728edcf}"
+            "chall1": "CTF2022{hell0_world!!!_635c690092}",
+            "chall2": "CTF2022{7h15_15_a_te57_69e2d0b6c4}",
+            "chall3": "CTF2022{i_7hink_7h15_will_work_d1b3b8c752}",
+            "chall4": "CTF2022{or_maybe_not_28c2d63de1}"
         }
     },
     {
         "team": "Team B",
         "flags": {
-            "chall1": "CTF2022{hell0_w0rld!!!_acc217cbf7}",
-            "chall2": "CTF2022{7h15_is_4_73s7_d0c80c73de}",
-            "chall3": "CTF2022{1_7hink_7hi5_will_w0rk_3b48977c46}",
-            "chall4": "CTF2022{or_m4ybe_no7_dea471ce09}"
+            "chall1": "CTF2022{hell0_world!!!_62f2fc61f2}",
+            "chall2": "CTF2022{7h15_15_a_te57_147ccf61ec}",
+            "chall3": "CTF2022{i_7hink_7h15_will_work_479ca66600}",
+            "chall4": "CTF2022{or_maybe_not_ba58d8d765}"
         }
     },
     {
         "team": "Team C",
         "flags": {
-            "chall1": "CTF2022{hell0_w0rld!!!_c2986791f8}",
-            "chall2": "CTF2022{7h15_is_4_73s7_fb7764a304}",
-            "chall3": "CTF2022{1_7hink_7hi5_will_w0rk_67aedb474a}",
-            "chall4": "CTF2022{or_m4ybe_no7_5c4324a8fb}"
+            "chall1": "CTF2022{hell0_world!!!_1193001114}",
+            "chall2": "CTF2022{7h15_15_a_te57_25c33f9cdc}",
+            "chall3": "CTF2022{i_7hink_7h15_will_work_c081e6fb84}",
+            "chall4": "CTF2022{or_maybe_not_f28363cd24}"
         }
     },
     {
         "team": "Team D",
         "flags": {
-            "chall1": "CTF2022{hell0_w0rld!!!_ebc5f757bc}",
-            "chall2": "CTF2022{7h15_is_4_73s7_a761ac62ca}",
-            "chall3": "CTF2022{1_7hink_7hi5_will_w0rk_bccb5be736}",
-            "chall4": "CTF2022{or_m4ybe_no7_89f3df377b}"
+            "chall1": "CTF2022{hell0_world!!!_485643e3ad}",
+            "chall2": "CTF2022{7h15_15_a_te57_d21b869038}",
+            "chall3": "CTF2022{i_7hink_7h15_will_work_4cb7ec1a77}",
+            "chall4": "CTF2022{or_maybe_not_cb8d47361d}"
         }
     },
     {
         "team": "Team E",
         "flags": {
-            "chall1": "CTF2022{hell0_w0rld!!!_ca6b6ee5d7}",
-            "chall2": "CTF2022{7h15_is_4_73s7_883bf9dc7a}",
-            "chall3": "CTF2022{1_7hink_7hi5_will_w0rk_50f9890915}",
-            "chall4": "CTF2022{or_m4ybe_no7_8c811bb4f9}"
+            "chall1": "CTF2022{hell0_world!!!_91d89627a6}",
+            "chall2": "CTF2022{7h15_15_a_te57_cc5ffb1b8d}",
+            "chall3": "CTF2022{i_7hink_7h15_will_work_ecda23bb69}",
+            "chall4": "CTF2022{or_maybe_not_32243d7668}"
         }
     }
 ]
