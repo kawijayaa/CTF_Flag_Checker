@@ -1,8 +1,6 @@
 from bson.json_util import dumps
 import pymongo
 import flag
-import re
-import os
 import json
 
 def connect(mongo_link:str):
